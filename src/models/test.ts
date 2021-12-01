@@ -1,5 +1,5 @@
 import type { Effect, Reducer, Subscription } from 'umi' // 映入umi 定义好的ts类型
-import axios from '@r/request' // 引入封装好的网络请求
+import axios from '@/request/request'
 
 // state 接口
 export interface TextModelState {
