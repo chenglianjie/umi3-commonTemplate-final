@@ -1,2 +1,15 @@
-# umi3-commonTemplate-final
-工作中用的umi3通用模板
+# umi project
+
+## Getting Started
+
+Install dependencies,
+
+```bash
+$ yarn
+```
+
+Start the dev server,
+
+```bash
+$ yarn start
+```
