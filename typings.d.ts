@@ -6,3 +6,7 @@ declare module '*.svg' {
   const url: string
   export default url
 }
+
+// 声明当前的环境
+declare const CurrentEnvironment: 'dev' | 'test' | 'prd'
+declare const REACT_APP_ENV: string

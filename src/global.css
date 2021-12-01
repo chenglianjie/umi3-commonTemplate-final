@@ -1,0 +1,7 @@
+/*  全局样式,会被自动引入到入口文件最前面。 */
+p,
+div {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

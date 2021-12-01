@@ -1,8 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "start": "umi dev",
-    "build": "umi build",
+    "start": "cross-env  REACT_APP_ENV=dev UMI_ENV=dev umi dev",
+    "start:test": "cross-env REACT_APP_ENV=test UMI_ENV=test  umi dev",
+    "start:prd": "cross-env  REACT_APP_ENV=prd UMI_ENV=prd umi dev",
+    "build": "cross-env UMI_ENV=dev umi build",
+    "build:test": "cross-env UMI_ENV=test umi build",
+    "build:prd": "cross-env UMI_ENV=prd umi build",
     "postinstall": "umi generate tmp",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
@@ -32,6 +36,7 @@
     "@umijs/fabric": "^2.8.1",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.5.20",
+    "cross-env": "^7.0.3",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "typescript": "^4.1.2",
