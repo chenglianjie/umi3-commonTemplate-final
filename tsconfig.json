@@ -13,7 +13,10 @@
     "strict": true,
     "paths": {
       "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
+      "@@/*": ["src/.umi/*"],
+      "@r/*": ["src/request/*"],
+      "@a/*": ["src/assets/*"],
+      "@u/*": ["src/utils/*"]
     },
     "allowSyntheticDefaultImports": true
   },

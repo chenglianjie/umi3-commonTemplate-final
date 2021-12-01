@@ -5,3 +5,14 @@ div {
   margin: 0;
   padding: 0;
 }
+
+/* message组件样式修改 */
+.ant-message-notice-content {
+  height: 60px;
+  padding: 19px 28px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 22px;
+  background: #222222;
+  border-radius: 6px;
+}

@@ -1,5 +1,6 @@
 import { defineConfig } from 'umi'
 import proxy from './proxy'
+const { resolve } = require('path')
 export default defineConfig({
   // 设置 node_modules 目录下依赖文件的编译方式。
   //   子配置项包含：
@@ -25,8 +26,15 @@ export default defineConfig({
     CurrentEnvironment: 'test', // 自定义当前的环境变量
     REACT_APP_ENV: process?.env?.REACT_APP_ENV,
   },
+  // 路径别名的配置
+  alias: {
+    '@a': resolve(__dirname, './src/assets'),
+    '@r': resolve(__dirname, './src/request'),
+    '@u': resolve(__dirname, './src/utils'),
+  },
   theme: {
-    'primary-color': '#2C6ECB', // 配置antd的主题色
+    '@primary-color': '#2C6ECB', // 配置antd的主题色
+    '@text-color': '#242D33', // 主文本色
   },
   mfsu: {},
   // 代理
